@@ -35,6 +35,8 @@ A (3,6,8); B (2,1,-7), -> 15.84
 A (7,-5, 0); B (1,-1,9) -> 11.53
 */
 
+
+/*
 Console.Write("Введите координату для x1: ");
 int x1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату для y1: ");
@@ -52,3 +54,19 @@ int z2 = Convert.ToInt32(Console.ReadLine());
 double d = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
 
 Console.WriteLine($"Расстояние между точками A:({x1}, {y1}, {z1}) и B:({x2}, {y2}, {z2}) равно: {Math.Round(d, 2)}");
+*/
+
+
+/*
+Задача 23
+Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+3 -> 1, 8, 27
+5 -> 1, 8, 27, 64, 125
+*/
+
+Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+for (int i = 1; i <= N; i++)
+{
+    Console.Write(Math.Pow(i, 3) + "\t");
+}
